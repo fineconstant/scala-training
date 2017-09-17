@@ -1,4 +1,4 @@
-package isp.scala.exercises
+package isp.scala.practice
 
 import org.scalatest.{FlatSpec, Matchers}
 

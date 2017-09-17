@@ -1,4 +1,4 @@
-package isp.scala.exercises
+package isp.scala.practice
 
 /**
   * Documentation: http://www.scala-lang.org/api/2.12.3/scala/collection/immutable/List.html
