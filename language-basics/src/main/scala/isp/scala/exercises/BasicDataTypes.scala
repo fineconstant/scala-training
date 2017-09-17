@@ -1,6 +1,6 @@
 package isp.scala.exercises
 
-object BasicTypes {
+object BasicDataTypes {
 
   /**
     * @return true Boolean value

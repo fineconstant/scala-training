@@ -5,3 +5,7 @@
 this is a
 multi line comment
  */
+
+/**
+  * This is a ScalaDoc comment
+  */

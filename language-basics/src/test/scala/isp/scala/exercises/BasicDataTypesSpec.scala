@@ -2,16 +2,16 @@ package isp.scala.exercises
 
 import org.scalatest.{FlatSpec, Matchers}
 
-class BasicTypesTest extends FlatSpec with Matchers {
+class BasicDataTypesSpec extends FlatSpec with Matchers {
 
   "defineBoolean" should "return a boolean value of true" in {
-    val actual = BasicTypes.defineBoolean()
+    val actual = BasicDataTypes.defineBoolean()
 
     actual shouldBe true
   }
 
   "defineByte" should "return a byte value of 16" in {
-    val actual = BasicTypes.defineByte()
+    val actual = BasicDataTypes.defineByte()
 
     val expected = -16 toByte
 
@@ -19,7 +19,7 @@ class BasicTypesTest extends FlatSpec with Matchers {
   }
 
   "defineInteger" should "return an Int value of 42" in {
-    val actual = BasicTypes.defineInteger()
+    val actual = BasicDataTypes.defineInteger()
 
     val expected = 42
 
@@ -27,7 +27,7 @@ class BasicTypesTest extends FlatSpec with Matchers {
   }
 
   "defineLong" should "return an Int value of 1 500 250" in {
-    val actual = BasicTypes.defineLong()
+    val actual = BasicDataTypes.defineLong()
 
     val expected = 1500250L
 
@@ -35,7 +35,7 @@ class BasicTypesTest extends FlatSpec with Matchers {
   }
 
   "defineFloat" should "return a Float value of 1.5" in {
-    val actual = BasicTypes.defineFloat()
+    val actual = BasicDataTypes.defineFloat()
 
     val expected = 1.5 toFloat
 
@@ -43,7 +43,7 @@ class BasicTypesTest extends FlatSpec with Matchers {
   }
 
   "defineDouble" should "return a Float value of 1" in {
-    val actual = BasicTypes.defineDouble()
+    val actual = BasicDataTypes.defineDouble()
 
     val expected = 1.toDouble
 

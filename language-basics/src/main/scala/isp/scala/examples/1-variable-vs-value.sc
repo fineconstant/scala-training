@@ -9,6 +9,4 @@ a = 150
 val x = "some string"
 //x = "other string" // Error: reassignment to val
 
-/**
-  * Always prefer to use val!
-  * /
+/** Always prefer to use val! * /
