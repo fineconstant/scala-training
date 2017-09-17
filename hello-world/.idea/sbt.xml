@@ -12,6 +12,8 @@
           </set>
         </option>
         <option name="sbtVersion" value="0.13.16" />
+        <option name="useAutoImport" value="true" />
+        <option name="useOurOwnAutoImport" value="true" />
       </SbtProjectSettings>
     </option>
     <option name="vmParameters" value="-XX:MaxPermSize=384M -Dhttp.proxyHost=localhost -Dhttp.proxyPort=60000 -Dhttps.proxyHost=localhost -Dhttps.proxyPort=60000" />
