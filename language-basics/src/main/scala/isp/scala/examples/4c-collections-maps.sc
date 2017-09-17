@@ -1,3 +1,4 @@
+
 /** Map */
 //key - value store (dictionary)
 val people = Map("John" -> 15, "Anna" -> 20, "John" -> 0, "Robert" -> 100)
