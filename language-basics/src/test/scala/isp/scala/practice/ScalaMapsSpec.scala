@@ -16,6 +16,7 @@ class ScalaMapsSpec extends FlatSpec with Matchers {
     val expected = "apple" -> 100
 
     actual should contain(expected)
+    actual should (contain key expected._1 and contain value expected._2)
   }
 
   it should "return a map with passed key and value ['pear', 50]" in {
@@ -24,6 +25,7 @@ class ScalaMapsSpec extends FlatSpec with Matchers {
     val expected = ("pear", 50)
 
     actual should contain(expected)
+    actual should (contain key expected._1 and contain value expected._2)
   }
 
   "getValue" should "return a value that corresponds to a key 'key1'" in new SampleMap {

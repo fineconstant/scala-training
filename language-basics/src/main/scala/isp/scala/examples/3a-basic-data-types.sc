@@ -44,3 +44,12 @@ val stringB = 100000000 toString
 val booleanA = true
 val booleanB = false
 val booleanC: Boolean = 10 < 2
+
+
+/** ###### TUPLE ###### */
+//Scala tuple combines a fixed number of items together so that
+//they can be passed around as a whole. Unlike an array or list,
+//a tuple can hold objects with different types but they are also immutable.
+val integers = (1, 2, 3, 4)
+val someValues = (1, 2, "string", 3.14, false, false)
+
