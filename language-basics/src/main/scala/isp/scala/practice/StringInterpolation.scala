@@ -8,7 +8,7 @@ object StringInterpolation {
     * @return String in a format "Int: [value of a], String: [value of b]"
     */
   def apply(a: Int, b: String): String = {
-    ???
+    s"Int: $a, String: $b"
   }
 
   /**
@@ -16,6 +16,6 @@ object StringInterpolation {
     * @return Formatted string with passed value (4 decimal places)
     */
   def formatDouble(x: Double): String = {
-    ???
+    f"$x%.4f"
   }
 }
