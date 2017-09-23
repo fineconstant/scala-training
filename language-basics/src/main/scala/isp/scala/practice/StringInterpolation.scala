@@ -12,7 +12,6 @@ object StringInterpolation {
   }
 
   /**
-    *
     * @param x Double value to be formatted
     * @return Formatted string with passed value (4 decimal places)
     */

@@ -1,4 +1,3 @@
-import scala.language.postfixOps
 
 //Byte
 //8 bit signed value. Range from -128 to 127
