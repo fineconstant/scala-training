@@ -10,4 +10,13 @@ object StringInterpolation {
   def apply(a: Int, b: String): String = {
     ???
   }
+
+  /**
+    *
+    * @param x Double value to be formatted
+    * @return Formatted string with passed value (4 decimal places)
+    */
+  def formatDouble(x: Double): String = {
+    ???
+  }
 }

@@ -1,5 +1,5 @@
 val x = 100
-val y = 3.0
+val y = 33.256
 
 val message = s" x = $x, y = $y, x / y = ${x / y}"
 
@@ -15,3 +15,7 @@ val a =
     |$$ |  $$ |$$       |$$ |$$ |$$    $$/       $$    $$/ $$       |$$    $$ |$$ |$$    $$ |
     |$$/   $$/  $$$$$$$/ $$/ $$/  $$$$$$/         $$$$$$/   $$$$$$$/  $$$$$$$/ $$/  $$$$$$$/
     |""".stripMargin
+
+val formatted = f"Double: $y%2.2f"
+
+val rawString = raw"first\nsecond"
