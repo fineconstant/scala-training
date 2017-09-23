@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>isp.scala.examples.objectoriented.Animal</OriginalElement>
+  <nodes>
+    <node x="128.0" y="0.0">isp.scala.examples.objectoriented.Meat</node>
+    <node x="6.5" y="0.0">isp.scala.examples.objectoriented.Animal</node>
+    <node x="0.0" y="79.0">isp.scala.examples.objectoriented.Carnivore</node>
+    <node x="13.0" y="158.0">isp.scala.examples.objectoriented.Wolf</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="isp.scala.examples.objectoriented.Carnivore" target="isp.scala.examples.objectoriented.Animal">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="isp.scala.examples.objectoriented.Wolf" target="isp.scala.examples.objectoriented.Carnivore">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="94.0" y="-326.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
