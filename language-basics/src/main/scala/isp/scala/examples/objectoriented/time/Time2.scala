@@ -7,13 +7,13 @@ class Time2 {
 
   def hour: Int = h
 
-  def hour_=(x: Int) {
+  def hour_=(x: Int): Unit = {
     h = x
   }
 
   def minute: Int = m
 
-  def minute_=(x: Int) {
+  def minute_=(x: Int): Unit ={
     m = x
   }
 

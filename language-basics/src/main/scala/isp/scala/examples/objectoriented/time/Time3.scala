@@ -7,14 +7,14 @@ class Time3 {
 
   def hour: Int = h
 
-  def hour_=(x: Int) {
+  def hour_=(x: Int): Unit = {
     require(0 <= x && x < 24, "must be between 0 and 24")
     h = x
   }
 
   def minute: Int = m
 
-  def minute_=(x: Int) {
+  def minute_=(x: Int): Unit = {
     require(0 <= x && x < 60, "must be between 0 and 60")
     m = x
   }
