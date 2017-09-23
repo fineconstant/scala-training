@@ -29,7 +29,7 @@ class ScalaListsSpec extends FlatSpec with Matchers {
   it should "create list from passed elements: 0.0, 1.0, 2.0" in {
     val actual = ScalaLists.createListFrom(0.0, 1.0, 2.0)
 
-    val expected = Seq(20.0, 3.14, 360.0)
+    val expected = Seq(0.0, 1.0, 2.0)
 
     actual should contain allElementsOf expected
   }
@@ -66,10 +66,10 @@ class ScalaListsSpec extends FlatSpec with Matchers {
     actual should contain theSameElementsInOrderAs expected
   }
 
-  "concatenateLists" should "merge two lists: [1,2,3] and [5,6]" in {
+  "concatenateLists" should "merge two lists: [1, 2, 3] and [5, 6]" in {
     val actual = ScalaLists.concatenateLists(List(1, 2, 3), List(5, 6))
 
-    val expected = Seq(1, 2, 3, 4, 5, 6)
+    val expected = Seq(1, 2, 3, 5, 6)
 
     actual should contain theSameElementsInOrderAs expected
   }
