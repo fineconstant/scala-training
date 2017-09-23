@@ -9,7 +9,7 @@ object ScalaSets {
     * @param elem an item to be added
     * @return "xs" set with additional "elem" added
     */
-  def addElem[T](xs: Set[T], elem: T): Seq[T] = ???
+  def addElem[T](xs: Set[T], elem: T): Set[T] = ???
 
   /**
     * @param xs a list to convert
