@@ -1,6 +1,5 @@
 package isp.scala.practice
 
-import scala.collection.immutable
 
 object ForComprehension {
 
@@ -10,7 +9,16 @@ object ForComprehension {
     * @return a new collection with values multiplied
     */
   def multiply(xs: Seq[Int], factor: Int): Seq[Int] = {
-    ???
+    //xs map (_ * factor)
+
+    //xs.map(x => x * factor)
+
+    //for {x <- xs
+    //     multiplied = x * factor}
+    //  yield multiplied
+
+    for (x <- xs)
+      yield x * factor
   }
 
   /**
@@ -20,7 +28,10 @@ object ForComprehension {
     * @return a new collection with strings that are longer than threshold upper cased
     */
   def longStringsToUpper(xs: Seq[String], threshold: Int): Seq[String] = {
-    ???
+    //xs filter (_.length > threshold) map (_.toUpperCase())
+
+    for (x <- xs if x.length > threshold)
+      yield x toUpperCase
   }
 
   /**
@@ -30,6 +41,9 @@ object ForComprehension {
     * @return a range between start and end containing only integers that are divisible by the divisor
     */
   def rangeDivisibleBy(start: Int, end: Int)(divisor: Int): Seq[Int] = {
-    ???
+    //Range(start, end) filter (x => x % divisor == 0)
+
+    for {x <- start to end if x % divisor == 0}
+      yield x
   }
 }
