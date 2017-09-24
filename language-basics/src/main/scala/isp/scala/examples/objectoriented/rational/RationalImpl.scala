@@ -13,13 +13,16 @@ class RationalImpl(n: Int, d: Int) extends Rational {
 
   //greatest common divisor
   private val g = gcd(n.abs, d.abs)
+
   val numerator: Int = n / g
   val denominator: Int = d / g
 
   //logging
   println(s"Created $this")
 
-  def this(n: Int) = this(n, 1) // auxiliary constructor
+  //auxiliary constructor
+  //all additional constructors must call another constructor (any other)
+  def this(n: Int) = this(n, 1)
 
   override def add(that: Rational) = new RationalImpl(numerator * that.denominator + that.numerator * denominator,
                                                       denominator * that.denominator)

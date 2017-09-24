@@ -8,6 +8,7 @@ a = 150
 //val - Value
 // values are immutable, final, their value is assigned on creation
 val x = "some string"
+
 //x = "other string" // Error: reassignment to val
 
-/** Always prefer to use val! * /
+/** Always prefer to use val! */

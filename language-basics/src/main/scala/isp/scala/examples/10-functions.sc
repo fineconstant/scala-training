@@ -52,3 +52,8 @@ def multiplyCollections(xs: Seq[Int], multipliers: Seq[Int]) = {
 }
 
 multiplyCollections(integers, Seq(1, 10, 100))
+
+
+/** Unit type */
+//returned by functions that are called only for their side-effects
+def sayHello() = println("Hello")
