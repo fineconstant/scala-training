@@ -8,7 +8,7 @@ class Thermometer {
   def fahrenheit: Float = celsius * 9 / 5 + 32
 
   //setter
-  def fahrenheit_=(f: Float) {
+  def fahrenheit_=(f: Float): Unit = {
     celsius = (f - 32) * 5 / 9
   }
 

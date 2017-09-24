@@ -5,6 +5,9 @@
 val fruits = List("apple", "orange", "banana", "grape")
 val others = "bread" :: "tea" :: "juice" :: Nil
 
+//get an element
+fruits(2)
+
 //concatenate two lists
 val shoppingBasket = fruits ::: others
 
@@ -20,3 +23,4 @@ val juiceAndYogurt = onlyJuice :+ "yogurt"
 //an empty collection
 val empty: List[Int] = Nil
 val anotherEmpty = List()
+val yetAnotherEmpty = List.empty[String]
