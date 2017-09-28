@@ -3,7 +3,7 @@
 //8 bit signed value. Range from -128 to 127
 val byteA: Byte = 127
 val byteB = 200 toByte
-//val byteC Byte = 200
+//val byteC: Byte = 200
 
 //Short
 //16 bit signed value. Range -32768 to 32767
