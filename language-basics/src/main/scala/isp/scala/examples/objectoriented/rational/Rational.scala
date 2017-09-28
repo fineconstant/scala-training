@@ -1,5 +1,6 @@
 package isp.scala.examples.objectoriented.rational
 
+// trait can not have a constructor parameters
 trait Rational {
   val numerator: Int
   val denominator: Int
