@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>isp.scala.examples.objectoriented.traits.diamond.ConstructionWorker</OriginalElement>
+  <nodes>
+    <node x="60.75" y="0.0">isp.scala.examples.objectoriented.traits.diamond.Workable</node>
+    <node x="96.0" y="79.0">isp.scala.examples.objectoriented.traits.diamond.ConstructionWorker</node>
+    <node x="0.0" y="79.0">isp.scala.examples.objectoriented.traits.diamond.Guitarist</node>
+    <node x="10.25" y="158.0">isp.scala.examples.objectoriented.traits.diamond.ConstructionWorkerGuitarist</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="isp.scala.examples.objectoriented.traits.diamond.ConstructionWorkerGuitarist" target="isp.scala.examples.objectoriented.traits.diamond.ConstructionWorker">
+      <point x="45.75" y="-14.5" />
+      <point x="147.5" y="133.0" />
+      <point x="165.5" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="isp.scala.examples.objectoriented.traits.diamond.Guitarist" target="isp.scala.examples.objectoriented.traits.diamond.Workable">
+      <point x="0.0" y="-14.5" />
+      <point x="38.0" y="54.0" />
+      <point x="81.25" y="54.0" />
+      <point x="-20.5" y="14.5" />
+    </edge>
+    <edge source="isp.scala.examples.objectoriented.traits.diamond.ConstructionWorkerGuitarist" target="isp.scala.examples.objectoriented.traits.diamond.Guitarist">
+      <point x="-45.75" y="-14.5" />
+      <point x="56.0" y="133.0" />
+      <point x="38.0" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="isp.scala.examples.objectoriented.traits.diamond.ConstructionWorker" target="isp.scala.examples.objectoriented.traits.diamond.Workable">
+      <point x="0.0" y="-14.5" />
+      <point x="165.5" y="54.0" />
+      <point x="122.25" y="54.0" />
+      <point x="20.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.9000000000000004" x="60.45424836601313" y="56.369281045751706" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
