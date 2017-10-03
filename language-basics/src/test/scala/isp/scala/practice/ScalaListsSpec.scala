@@ -81,4 +81,20 @@ class ScalaListsSpec extends FlatSpec with Matchers {
 
     actual should contain theSameElementsInOrderAs expected
   }
+
+  "aggregateLists" should "aggregate two lists: [1, 2, 3], [5, 6] and [7, 9]" in {
+    val actual = ScalaLists.aggregateLists(List(1, 2, 3), List(5, 6), List(7, 8))
+
+    val expected = List(List(1, 2, 3), List(5, 6), List(7, 8))
+
+    actual should contain theSameElementsInOrderAs expected
+  }
+
+  it should "merge two lists: [1], [2] and [3]" in {
+    val actual = ScalaLists.aggregateLists(List(1), List(2),List(3))
+
+    val expected = List(List(1), List(2),List(3))
+
+    actual should contain theSameElementsInOrderAs expected
+  }
 }

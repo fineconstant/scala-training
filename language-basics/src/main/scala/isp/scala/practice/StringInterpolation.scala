@@ -18,4 +18,12 @@ object StringInterpolation {
   def formatDouble(x: Double): String = {
     f"$x%.4f"
   }
+
+  /**
+    * @param fruits List of Strings to be formatted
+    * @return String in a format "My favorite fruits: [item1], [item2], ..."
+    */
+  def formatList(fruits: List[String]): String = {
+    ???
+  }
 }
