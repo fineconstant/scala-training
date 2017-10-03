@@ -54,6 +54,8 @@ object ScalaLists {
     * @return a single collection containing all argument collections (not their elements)
     */
   def aggregateLists(xs: List[Int], ys: List[Int], zs: List[Int]): List[List[Int]] = {
-    ???
+    //List(xs) :+ ys :+ zs
+    //xs +: ys +: List(zs)
+    List(xs, ys, zs)
   }
 }

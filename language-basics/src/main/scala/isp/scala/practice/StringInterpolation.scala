@@ -24,6 +24,6 @@ object StringInterpolation {
     * @return String in a format "My favorite fruits: [item1], [item2], ..."
     */
   def formatList(fruits: List[String]): String = {
-    ???
+    "My favorite fruits: " + fruits.mkString(", ")
   }
 }
