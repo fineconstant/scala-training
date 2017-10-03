@@ -45,4 +45,14 @@ object ScalaLists {
   def concatenateLists(xs: List[Int], ys: List[Int]): List[Int] = {
     ???
   }
+
+  /**
+    * @param xs some integer collection
+    * @param ys some integer collection
+    * @param zs some integer collection
+    * @return a single collection containing all argument collections (not their elements)
+    */
+  def aggregateLists(xs: List[Int], ys: List[Int], zs: List[Int]): List[List[Int]] = {
+    ???
+  }
 }

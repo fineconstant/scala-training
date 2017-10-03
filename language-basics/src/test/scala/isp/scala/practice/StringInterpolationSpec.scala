@@ -35,4 +35,20 @@ class StringInterpolationSpec extends FlatSpec with Matchers {
 
     actual shouldEqual expected
   }
+
+  "format list" should "format a collection with one element" in {
+    val actual = StringInterpolation.formatList(List("apple"))
+
+    val expected = "My favorite fruits: apple"
+
+    actual shouldEqual expected
+  }
+
+  it should "format a collection with multiple elements" in {
+    val actual = StringInterpolation.formatList(List("apple", "orange", "banana", "pear"))
+
+    val expected = "My favorite fruits: apple, orange, banana, pear"
+
+    actual shouldEqual expected
+  }
 }
