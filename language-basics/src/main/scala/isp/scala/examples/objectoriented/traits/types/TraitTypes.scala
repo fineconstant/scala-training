@@ -16,8 +16,11 @@ class Z {
 
 class A {
   def bazFooBar(xyz: Z with X with Y) {
+    // all methods are available
     xyz.foo("hello")
     xyz.bar(42)
     xyz.baz()
   }
 }
+
+

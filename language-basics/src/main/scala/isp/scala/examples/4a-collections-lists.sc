@@ -18,7 +18,12 @@ val onlyJuice = shoppingBasket.filter(item => item == "juice")
 val juiceAndYogurt = onlyJuice :+ "yogurt"
 //add a single element at the beginning
 "shaving cream" +: juiceAndYogurt
-"shaving cream" :: juiceAndYogurt //the same
+"shaving cream" :: juiceAndYogurt
+
+List("shaving cream") +: juiceAndYogurt
+List("shaving cream") :: juiceAndYogurt
+List("shaving cream") ::: juiceAndYogurt
+
 
 //an empty collection
 val empty: List[Int] = Nil
