@@ -18,4 +18,15 @@ object Functions {
          x2 = f2(x1)}
       yield x2
   }
+
+  /**
+    * @param f
+    * @param g
+    * @param h
+    * @return a function that is composed of h(g(f(a)))
+    */
+  def composeFunctions[A, B, C, D](f: A => B, g: B => C, h: C => D): A => D = {
+    ???
+  }
+
 }
