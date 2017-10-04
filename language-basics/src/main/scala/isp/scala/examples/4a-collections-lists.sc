@@ -1,3 +1,4 @@
+import scala.collection.mutable
 
 /** List */
 //list of type String
@@ -29,3 +30,21 @@ List("shaving cream") ::: juiceAndYogurt
 val empty: List[Int] = Nil
 val anotherEmpty = List()
 val yetAnotherEmpty = List.empty[String]
+
+
+/**
+  * Mutable collections
+  * "mutable" prefix
+  *
+  * @see https://docs.scala-lang.org/overviews/collections/concrete-mutable-collection-classes.html
+  *
+  */
+//ArrayBuffer - implemented with arrays
+val mutableArray = mutable.Buffer(1, 2, 3)
+
+//ListBuffer - implemented with linked list
+val mutableList = mutable.ListBuffer(1, 2, 3)
+
+mutableArray += 100 += 50
+
+mutableArray -= 1
