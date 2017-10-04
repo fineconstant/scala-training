@@ -23,7 +23,7 @@ class StringInterpolationSpec extends FlatSpec with Matchers {
   "format method" should "format value 12345.12345 up to 4 decimal places" in {
     val actual = StringInterpolation.formatDouble(12345.12345D)
 
-    val expected = "12345.1235"
+    val expected = "12345,1235"
 
     actual shouldEqual expected
   }
@@ -31,7 +31,7 @@ class StringInterpolationSpec extends FlatSpec with Matchers {
   it should "format value 1.55555 up to 4 decimal places" in {
     val actual = StringInterpolation.formatDouble(1.55555)
 
-    val expected = "1.5556"
+    val expected = "1,5556"
 
     actual shouldEqual expected
   }
