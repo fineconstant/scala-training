@@ -10,4 +10,15 @@ object Functions {
   def applyFunctions(f1: Int => Int, f2: Int => Int)(xs: Seq[Int]): Seq[Int] = {
     ???
   }
+
+  /**
+    * @param f
+    * @param g
+    * @param h
+    * @return a function that is composed of h(g(f(a)))
+    */
+  def composeFunctions[A, B, C, D](f: A => B, g: B => C, h: C => D): A => D = {
+    ???
+  }
+
 }
