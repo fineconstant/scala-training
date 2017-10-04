@@ -45,3 +45,4 @@ fabric.properties
 *.class
 *.log
 .idea/sonarlint
+*.iml
