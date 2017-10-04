@@ -26,7 +26,7 @@ object Functions {
     * @return a function that is composed of h(g(f(a)))
     */
   def composeFunctions[A, B, C, D](f: A => B, g: B => C, h: C => D): A => D = {
-    ???
+    a => h(g(f(a)))
   }
 
 }
