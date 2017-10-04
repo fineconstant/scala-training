@@ -46,3 +46,4 @@ fabric.properties
 *.log
 .idea/sonarlint
 *.iml
+compiler.xml
