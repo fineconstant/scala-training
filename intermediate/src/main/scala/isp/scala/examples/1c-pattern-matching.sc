@@ -1,13 +1,18 @@
 
 val numbers = List(1, 2, 3, 4, 5, 6, 7, 8, 9)
-
 //declare variables and extract values form 'numbers'
 val a :: b :: c :: rest = numbers
-
 a
 b
 c
 rest
+
+
+//val firstName, lastName, age = ("John", "Smith", 49)
+val (firstName, lastName, age) = ("John", "Smith", 49)
+firstName
+lastName
+age
 
 
 //useful for 'head tail recursion'

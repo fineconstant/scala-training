@@ -83,3 +83,7 @@ numbers.foldRight(500)(_ + _)
 (numbers :\ 500) (_ + _)
 
 numbers.groupBy((i: Int) => i)
+
+List(Set(1, 2, 3), Set(1, 2, 3)).flatten
+
+Set(List(1, 2, 3), List(1, 2, 3)).flatten
