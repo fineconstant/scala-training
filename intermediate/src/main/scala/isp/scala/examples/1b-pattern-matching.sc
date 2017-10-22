@@ -15,11 +15,11 @@ matchStringNumber("sth other")
 
 def matchType(x: AnyVal) = {
   x match {
-    case _: Int               => "an Integer" //not interested in a value
+    case _: Int               => "an Integer"   //not interested in a value
     case d: Double            => s"a Double $d" //interested in a value
     case f: Float if f > 0.5F => s"a Float $f"
     //scala.MatchError: 0.25 (of class java.lang.Float)
-    case sth => s"Sth else: $sth"
+    //case sth => s"Sth else: $sth"
   }
 }
 

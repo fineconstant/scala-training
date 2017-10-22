@@ -5,6 +5,7 @@ case class Street(name: String, number: Int)
 
 case class Address(city: City, street: Street)
 
+
 val katowice = City("Katowice")
 val kond = Street("Konduktorska", 35)
 

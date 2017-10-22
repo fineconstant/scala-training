@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Check all excercises" type="ScalaTestRunConfiguration" factoryName="ScalaTest" singleton="true">
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    <module name="language-basics" />
+    <module name="intermediate" />
     <setting name="path" value="" />
     <setting name="package" value="isp.scala.practice" />
     <setting name="vmparams" value="" />
@@ -11,7 +11,7 @@
     <setting name="testName" value="" />
     <setting name="testKind" value="All in package" />
     <setting name="showProgressMessages" value="true" />
-    <setting name="useSbt" value="true" />
+    <setting name="useSbt" value="false" />
     <setting name="useUiWithSbt" value="false" />
     <classRegexps />
     <testRegexps />
