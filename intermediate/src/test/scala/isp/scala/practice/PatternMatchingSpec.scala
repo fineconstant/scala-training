@@ -110,5 +110,4 @@ class PatternMatchingSpec extends FlatSpecMatchers {
 
     actual should contain theSameElementsInOrderAs expected
   }
-
 }

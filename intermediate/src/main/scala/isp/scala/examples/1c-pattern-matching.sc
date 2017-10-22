@@ -2,6 +2,7 @@
 val numbers = List(1, 2, 3, 4, 5, 6, 7, 8, 9)
 //declare variables and extract values form 'numbers'
 val a :: b :: c :: rest = numbers
+
 a
 b
 c

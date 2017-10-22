@@ -1,3 +1,4 @@
+
 val numbers = Seq(5, 4, 3, 2, 1, 1, 0, 0, 0)
 
 numbers.map(x => x * 10)
@@ -66,7 +67,7 @@ numbers.reduceRight((a: Int, b: Int) => {
   a + b
 })
 
-// fold([start value]])([reduce function]
+// fold([start value]])([reduce function])
 numbers.fold(500)(_ + _)
 
 // val numbers = Seq(5, 4, 3, 2, 1, 1, 0, 0, 0)
