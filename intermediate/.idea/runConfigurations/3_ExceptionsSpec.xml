@@ -1,17 +1,17 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Check all excercises" type="ScalaTestRunConfiguration" factoryName="ScalaTest" singleton="true">
+  <configuration default="false" name="3-ExceptionsSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" singleton="true">
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-    <module name="language-basics" />
-    <setting name="path" value="" />
-    <setting name="package" value="isp.scala.practice" />
+    <module name="intermediate" />
+    <setting name="path" value="isp.scala.practice.ExceptionsSpec" />
+    <setting name="package" value="" />
     <setting name="vmparams" value="" />
     <setting name="params" value="" />
     <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
     <setting name="searchForTest" value="Across module dependencies" />
     <setting name="testName" value="" />
-    <setting name="testKind" value="All in package" />
+    <setting name="testKind" value="Class" />
     <setting name="showProgressMessages" value="true" />
-    <setting name="useSbt" value="true" />
+    <setting name="useSbt" value="false" />
     <setting name="useUiWithSbt" value="false" />
     <classRegexps />
     <testRegexps />
