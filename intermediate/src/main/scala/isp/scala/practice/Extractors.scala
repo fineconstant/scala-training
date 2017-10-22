@@ -9,12 +9,12 @@ object Extractors {
     /**
       * @return square of the number
       */
-    def apply(x: Int): Int = ???
+    def apply(x: Int): Int = x * x
 
     /**
       * @return square root of the number
       */
-    def unapply(x: Int): Option[Int] = ???
+    def unapply(x: Int): Option[Int] = Option(Math.sqrt(x).toInt)
   }
 
   /**
@@ -26,26 +26,29 @@ object Extractors {
       *
       * @return formatted phone number e.g. 790-100-100
       */
-    def apply(a: Int, b: Int, c: Int): String = ???
+    def apply(a: Int, b: Int, c: Int): String = s"$a-$b-$c"
 
     /**
       * Parses a string representation of phone number into three int parts
       *
       * @return a tuple of three integers
       */
-    def unapply(x: String): Option[(Int, Int, Int)] = ???
+    def unapply(x: String): Option[(Int, Int, Int)] = x.split("-") match {
+      case Array(a, b, c) => Option((a.toInt, b.toInt, c.toInt))
+      case _              => None
+    }
   }
 
   object TimesTwo {
     /**
       * Multiply x times 2
       */
-    def apply(x: Double): Double = ???
+    def apply(x: Double): Double = x * 2
 
     /**
       * return back the original value
       */
-    def unapply(x: Double): Option[Double] = ???
+    def unapply(x: Double): Option[Double] = Option(x / 2)
   }
 
 }

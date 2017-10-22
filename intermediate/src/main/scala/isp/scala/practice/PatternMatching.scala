@@ -9,7 +9,12 @@ object PatternMatching {
     * Provide a default value of Int.MaxValue
     */
   def matchString(str: String): Int = {
-    ???
+    str match {
+      case "one"   => 1
+      case "two"   => 2
+      case "three" => 3
+      case _       => Int.MinValue
+    }
   }
 
   /**
@@ -21,7 +26,10 @@ object PatternMatching {
     * @return a sum of all integers inside numbers collection
     */
   def sumIntegerCollection(numbers: List[Int]): Int = {
-    ???
+    numbers match {
+      case Nil     => 0
+      case x :: xs => x + sumIntegerCollection(xs)
+    }
   }
 
   /**
@@ -32,7 +40,10 @@ object PatternMatching {
     * @return Personalized greeting message
     */
   def personalizedGreeting(user: User): String = {
-    ???
+    user match {
+      case BasicUser(name, _, _, _)        => s"Hello $name, glad to see you again!"
+      case PremiumUser(name, _, _, points) => s"Welcome $name, you have $points premium points!"
+    }
   }
 
   /**
@@ -46,7 +57,12 @@ object PatternMatching {
     * @return Vector of greetings for each user
     */
   def freePremiumForThirdUser(users: Vector[User]): Vector[String] = {
-    ???
+    users.zipWithIndex
+    .map { case (u, i) => (u, i + 1) }
+    .map {
+      case (BasicUser(name, _, _, _), i: Int) if i % 3 == 0 => s"Hello $name, we're giving you a free premium account!"
+      case (user: User, _)                                  => personalizedGreeting(user)
+    }
   }
 
 }
